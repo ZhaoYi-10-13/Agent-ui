@@ -10,15 +10,8 @@ import { MessageCircle, Loader2, SendHorizonal, Server, ArrowLeft } from "lucide
  * - 本地开发（:5173）默认请求 127.0.0.1:8000
  * - 生产环境默认同源（例如 http://your-aliyun-ip:80）
  */
-function inferDefaultApi(): string {
-  if (typeof window === "undefined") return "http://127.0.0.1:8000";
-  const override = (window as any).__RAG_BASE_URL__;
-  if (override) return override as string;
-  if (window.location.port === "5173") return "http://127.0.0.1:8000";
-  return window.location.origin; // 同源（阿里云 80 端口）
-}
 
-const DEFAULT_API = inferDefaultApi();
+const DEFAULT_API = "your Aliyun API key";
 
 export default function App() {
   const [view, setView] = useState<"home" | "chat">("home");
