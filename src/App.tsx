@@ -5,7 +5,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { MessageCircle, Loader2, SendHorizonal, Server, ArrowLeft } from "lucide-react";
 
-const DEFAULT_API = "your Aliyun API key";
+const DEFAULT_API = "your Aliyun Public IP";
 
 export default function App() {
   const [view, setView] = useState<"home" | "chat">("home");
