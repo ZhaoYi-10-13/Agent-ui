@@ -26,10 +26,9 @@
 
 ```bash
 # 进入服务器目录
-cd ~
-# 克隆后端和前端仓库
-git clone https://github.com/yourname/Gary-Agent-RAG.git
 cd Gary-Agent-RAG
+# 克隆后端和前端仓库
+git clone https://github.com/ZhaoYi-10-13/Agent-ui.git
 ```
 
 ---
