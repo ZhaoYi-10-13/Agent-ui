@@ -29,6 +29,8 @@
 cd Gary-Agent-RAG
 # 克隆后端和前端仓库
 git clone https://github.com/ZhaoYi-10-13/Agent-ui.git
+cd Agent-ui
+pip install -r requirement.txt
 ```
 
 ---
